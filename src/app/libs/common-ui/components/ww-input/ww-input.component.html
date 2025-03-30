@@ -1,0 +1,16 @@
+<label class="ww-control-label">
+	<span class="ww-form-label__text">
+		<ng-content></ng-content>
+	</span>
+  <div class="input__wrapper">
+    <input
+      [ngModel]="value"
+      (ngModelChange)="onModelChange($event)"
+      class="ww-input"
+      [type]="type()"
+      (blur)="onTouched()"
+      [placeholder]="placeholder()"
+      [disabled]="disabled()" />
+<!--    <svg [icon]="icon()" class="input-icon svg18"></svg>-->
+  </div>
+</label>

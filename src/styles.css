@@ -1,0 +1,20 @@
+.form__wrapper{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  align-items: center;
+}
+
+.error{
+  color: red;
+}
+
+.btn{
+  max-width: 100%;
+}
+
+ww-input.ng-touched.ng-invalid{
+  border: 1px solid red;
+}

@@ -1,0 +1,22 @@
+<form [formGroup]="form" (ngSubmit)="onLogin()">
+  <div class="form__wrapper">
+    <ww-input
+      formControlName="email"
+      [placeholder]="'Введи email'"
+      [type]="'text'"
+    ></ww-input>
+    @if(form.controls['email'].touched && form.controls['email'].hasError('required')){
+      <small class="error">Поле обязательно для заполнения</small>
+    }
+    <ww-input
+      formControlName="password"
+      [placeholder]="'Введи пароль'"
+      [type]="'password'"
+    ></ww-input>
+    @if(form.controls['password'].touched && form.controls['password'].hasError('required')){
+      <small class="error">Поле обязательно для заполнения</small>
+    }
+    <button class="btn btn-shadow">Войти</button>
+  </div>
+</form>
+

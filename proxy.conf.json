@@ -1,0 +1,7 @@
+{
+  "/api": {
+    "target": "http://vyachep6.beget.tech",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
